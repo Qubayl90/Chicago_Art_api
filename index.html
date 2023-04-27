@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main_capi.js"></script>
+</head>
+<body>
+    <!--Start of Container For Movie Posters-->
+    <div class="container">
+        <div class="gallery"> 
+            <figure class="gallery__item gallery__item--1" id="129884" onclick="event.stopPropagation(); getImage(this.id, event)" >
+                <img class="gallery__img" src="images/starry-night-and-the-astronauts.jpg" alt="Starry Night and the astronauts">
+             </figure> 
+            <figure class="gallery__item gallery__item--2" id="16231" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/processional-cross-with-saint-mary-magdalene-and-a-blessed-hermit.jpg" alt="Processional Cross with Saint Mary Magdalene and a Blessed Hermit">
+            </figure> 
+            <figure class="gallery__item gallery__item--3" id="76816" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/the-young-emperor-akbar-arrests-the-insolent-shah-abu-l-maali-page-from-a-manuscript-of-the-akb.jpg" alt="The Young Emperor Akbar Arrests The Insolent Shah Abu-l-Maali-Page-From-A-Manuscript-Of-The-Akb">
+            </figure>
+            <figure class="gallery__item gallery__item--4" id="229351" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/target.jpg" alt="Target">
+            </figure>
+            <figure class="gallery__item gallery__item--5" id="97910" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/the-advance-guard-or-the-military-sacrifice-the-ambush.jpg" alt="The Advance Guard or The Military Sacrifice The Ambush">
+            </figure>
+            <figure class="gallery__item gallery__item--6" id="102963" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/the-titanic.jpg" alt="The Titanic">
+            </figure>
+        </div>
+        <div id="art_info" style="display: none;">
+        </br>
+            <div style="text-align: center;"><b>Information of The Selected Artwork</b></div>
+            <b>Art ID: </b><span id="art_id">129884</span></br>
+            <b>Art Title: </b><span id="art_title">The Young Emperor Akbar Arrests the Insolent Shah Abu\u2019l-Maali, page from a manuscript of the Akbarnama</span></br>
+            <b>Artist Title: </b><span id="artist_title">Basawan</span></br>
+            <b>Artwork Type Title: </b><span id="artwork_type_title">Painting</span></br>
+            <b>Department Title: </b><span id="department_title">Arts of Asia</span></br>
+            <button onclick="hideArtWorkInfo();" > Hide Art Work Information </button> 
+        </div>
+    </div>
+    
+</body>
+</html>
